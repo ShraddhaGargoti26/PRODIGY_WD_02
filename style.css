@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url('bg.png'); /* Replace with your image URL */
+    background-size: contain; /* Ensure the full image appears */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #316ba153;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Align stopwatch and lap list side by side */
+    align-items: left;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 50px; /* Add some padding for better spacing */
+}
+
+.stopwatch-container {
+    text-align: center;
+    background-color: rgb(245, 245, 245); /* Transparent to show background */
+    border-radius: 50%;
+    height: 35vw; /* Use viewport width for better responsiveness */
+    width: 35vw; /* Keep it proportional to viewport */
+    max-height: 300px; /* Limit maximum size */
+    max-width: 300px; /* Limit maximum size */
+    position: absolute; /* Allow overlap */
+    top: 47%; /* Center vertically */
+    left: 51%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+}
+
+#display { 
+    font-size: 2vw; /* Responsive font size based on viewport width */
+    margin-top: 70px;
+  padding: 10px;
+    border-radius: 10px;
+}
+
+.buttons button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2vw; /* Responsive font size */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 2px;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+#pause {
+    background-color: #fbc02d;
+}
+
+#lap {
+    background-color: #0288d1;
+}
+
+#reset {
+    background-color: #f44336;
+}
+
+.lap-list-container {
+    width: 30vw;
+    max-width: 400px;
+    margin-left:1100px;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table th, table td {
+    border: 1px solid #93c2e8;
+    padding: 8px;
+    text-align: center;
+   
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-size: 1.2em;
+}
+
+#laps-list {
+    list-style-type: none;
+  
+}
+
+#laps-list td {
+    font-size: 1em;
+    margin: 5px 0;
+}
